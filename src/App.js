@@ -1,23 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import Pure from './Components/Pure';
+import Parent from './Components/Parent';
+import RefsDemo from './Components/RefsDemo';
+import FocusInput from './Components/FocusInput';
+import FRParentInput from './Components/FRParentInput';
+import PortalDemo from './Components/PortalDemo';
+import Hero from './Components/Hero';
+import ErrorBoundry from './Components/ErrorBoundry';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <FragmentsDemo/> */}
+      {/* <Pure/> */}
+
+      {/* <Parent/> */}
+
+      {/* <RefsDemo /> */}
+      {/* <FocusInput/> */}
+      {/* <FRParentInput/> */}
+      {/* <PortalDemo/> */}
+      <ErrorBoundry>
+        <Hero heroName="Joker" />
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <Hero heroName="Batman" />
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <Hero heroName="SuparMan" />
+      </ErrorBoundry>
+    
+
+
+
+
     </div>
   );
 }
